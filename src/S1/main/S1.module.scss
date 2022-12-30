@@ -5,5 +5,22 @@
     width: 75px;
 }
 .header {
+    color: white;
     height: 75px;
+    :not(:last-child):hover {
+        color: yellow;
+    }
+}
+.headerSearch {
+    width: 10%;
+    cursor: pointer;
+    
+    input {
+        padding: 5px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+    }
+    img {
+        width: 30px;
+    }
 }

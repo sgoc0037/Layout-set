@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { CommonCeil } from '../../Common/Ceil/CommonCeil';
 import { S1header } from '../../Common/Header/CommonHeader';
+import { useInput } from '../../Hooks/useInput';
 import { Article } from '../Article/Article';
 import { Blog } from '../Blog/Blog';
 import { Footer } from '../Footer/Footer';
@@ -8,9 +9,16 @@ import s from './S1.module.scss';
 
 export function S1() {
 
+    const [icon, setIcon] = useState<boolean>(false);
+    const { value, changeHandler } = useInput();
+
+    function clickHandler() {
+        setIcon(true);
+    }
+
     const s1 = {
         headerStrList: ['Logo', 'Home', 'About Us', 'Blog', 'Contact'],
-        headerLinkList: ['', '', '', '', ''],
+        headerLinkList: ['', '', '', '', 'фвыфвы'],
         header: {
             stylees: {},
             name: s.header
@@ -42,12 +50,18 @@ export function S1() {
                         </CommonCeil>
                     })
                 }
-                <input className={s.headerSearch} type='search' placeholder="Search" />
+
+                <div
+                    onClick={clickHandler}
+                    className={s.headerSearch}>
+                    {icon ? <input value={value} onChange={changeHandler} placeholder='Search' /> : <img src='../../images/SVG/iconmonstr-magnifier-lined.svg' />}
+                </div>
+
             </S1header>
             <hr />
             <Article />
             <Blog />
-            <Footer {...s1.footer}/>
+            <Footer {...s1.footer} />
         </div>
     )
 }

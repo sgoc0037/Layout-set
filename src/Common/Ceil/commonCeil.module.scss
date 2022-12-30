@@ -1,8 +1,13 @@
 .ceil {
-    display: flex;
     width: 10%;
     height: 100%;
+    
+    display: flex;
     align-items: center;
     justify-content: center;
+    
+    border: 0;
+    
+    color: black;
     background-color: transparent;
 }
