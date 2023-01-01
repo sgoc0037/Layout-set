@@ -1,13 +1,14 @@
 import React from 'react';
+import { ICommonPast } from '../../types/types';
 import s from './commonHeader.module.scss';
 
-export function S1header(props:ICommonPast) {
+export function S1header({ name, stylees, children }: ICommonPast) {
 
-    const { name, stylees } = props;
+    const names = [name, s.header].join(' ');
 
     return (
-        <header style={stylees} className={`${s.header} ${name}`}>
-            {props.children}
+        <header style={stylees} className={names}>
+            {children}
         </header>
     )
 }

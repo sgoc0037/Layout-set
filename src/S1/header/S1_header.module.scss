@@ -1,0 +1,44 @@
+.ceil {
+    width: 75px;
+    height: 75px;
+
+    font-weight: 700;
+
+    color: inherit;
+
+    border-bottom: 2px solid transparent;
+}
+
+.header {
+
+    :not(:last-child):hover {
+        z-index: 9999;
+        color: yellow;
+        border-color: yellow;
+    }
+}
+
+.headerSearch {
+    width: 10%;
+    cursor: pointer;
+
+    input {
+        padding: 5px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+    }
+
+    img {
+        width: 30px;
+    }
+}
+
+hr {
+    position: absolute;
+    top: 73px;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #5e6568;
+}

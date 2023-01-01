@@ -1,13 +1,17 @@
 import React from "react";
 import { CommonCard } from "../../Common/Card/CommonCard";
+import { Q_h2_span } from "../../Common/TextComponents/h2span/Q_h2_span";
 import s from './topPart.module.scss';
 
-export function TopPart(props:any) {
+export function TopPart(props: any) {
+
+    const content = ['Lorem ipsum dolor sit amet.', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime delectus numquam dolore?']
 
     return (
         <>
-            <h2 className={s.title}></h2>
-            <span className={s.addition}></span>
+            <Q_h2_span>
+                {content}
+            </Q_h2_span>
             <div className={s.cards}>
                 <CommonCard {...props}></CommonCard>
                 <CommonCard {...props}></CommonCard>
