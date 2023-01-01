@@ -1,6 +1,8 @@
 import React from 'react';
 import { BtnOrLink } from '../../Common/btnOrLink/btnOrLink';
+import { Button } from '../../Common/Button/Button';
 import s from './downPart.module.scss';
+import style from './topPart.module.scss';
 
 export function DownPart() {
 
@@ -22,7 +24,9 @@ export function DownPart() {
                     <li><hr /></li>
                     <li className={s.ceil}>121<span>Lorem, ipsum dolor.</span></li>
                 </ul>
-                <BtnOrLink {...btn}>Read more</BtnOrLink>
+                <Button icon='../../images/SVG/arrow_right.svg' name={style.more}>
+                    Read more
+                </Button>
             </div>
             <div className={s.image}></div>
             {/* <img src=''/>                         

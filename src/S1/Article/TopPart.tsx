@@ -6,14 +6,13 @@ import s from './topPart.module.scss'
 export function TopPart() {
 
     const content = ['Lorem ipsum dolor sit amet consectetur, adipisicing elit.', 'Lorem ipsum dolor sit.'];
-    const icon = '../../images/SVG/arrow_right.svg';
 
     return (
         <div className={s.article}>
             <Q_h2_span name={s.wrapper}>
                 {content}
             </Q_h2_span>
-            <Button icon={icon} name={s.more}>
+            <Button icon='../../images/SVG/compass_void.svg' name={s.more}>
                 Read more
             </Button>
         </div>
