@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { CommonCeil } from '../../Common/Ceil/CommonCeil';
 import { S1header } from '../../Common/Header/CommonHeader';
+import { Q_h2_span } from '../../Common/TextComponents/h2span/Q_h2_span';
 import { useInput } from '../../Hooks/useInput';
 import { Article } from '../Article/Article';
 import { Blog } from '../Blog/Blog';
