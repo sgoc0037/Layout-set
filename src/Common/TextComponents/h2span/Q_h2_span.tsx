@@ -1,9 +1,10 @@
 import React from "react";
+import { ICommonPast } from "../../../types/types";
 import s from './Q_h2_span.module.scss';
 
-export function Q_h2_span({ children }: { children: React.ReactNode }) {
+export function Q_h2_span({ name, children }: ICommonPast) {
 
-    const names = [s.wrapper].join(' ');
+    const names = [name, s.wrapper].join(' ');
 
     const [h1, span] = React.Children.toArray(children);
 

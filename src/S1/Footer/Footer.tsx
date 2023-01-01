@@ -1,16 +1,16 @@
 import React, { MouseEventHandler } from "react";
 import { Q_h2_span } from "../../Common/TextComponents/h2span/Q_h2_span";
+import { ICommonPast } from "../../types/types";
 import s from './footer.module.scss';
 
 interface IFooter extends ICommonPast {
     link: string | null
 }
 
-export function Footer(props: IFooter) {
+export function Footer({ name, stylees, link, children }: IFooter) {
 
-    const { name, stylees, link } = props;
     const content = ['Lorem, ipsum dolor.', 'Lorem ipsum dolor sit amet consectetur adipisicing.'];
-
+    const names = [name, s.link].join(' ');
 
     function callMe(e: React.MouseEvent<HTMLButtonElement>) {
         //скопировать в буфер.
@@ -24,13 +24,13 @@ export function Footer(props: IFooter) {
             <button className={s.link} onClick={callMe}>1231456234233</button>
             {!link &&
                 <button style={stylees} className={`${s.link} ${name}`}>
-                    {props.children}
+                    {children}
                 </button>
             }
             {link &&
                 <a style={stylees} className={`${s.link} ${name}`}
                     href={link}>
-                    {props.children}
+                    {children}
                 </a>
             }
         </footer>

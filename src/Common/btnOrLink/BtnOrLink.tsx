@@ -1,4 +1,5 @@
 import React from "react";
+import { ICommonPast } from "../../types/types";
 
 interface IBtnOrLink extends ICommonPast {
     link: string
