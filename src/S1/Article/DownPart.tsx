@@ -17,7 +17,9 @@ export function DownPart() {
                 <p className={s.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum velit ipsam error, non illum voluptatum nam minima molestiae labore, ex, tenetur ea distinctio amet beatae et ipsa vero?</p>
                 <ul className={s.info}>
                     <li className={s.ceil}>927<span>Lorem, ipsum.</span></li>
+                    <li><hr /></li>
                     <li className={s.ceil}>297<span>Lorem, ipsum.</span></li>
+                    <li><hr /></li>
                     <li className={s.ceil}>121<span>Lorem, ipsum dolor.</span></li>
                 </ul>
                 <BtnOrLink {...btn}>Read more</BtnOrLink>
