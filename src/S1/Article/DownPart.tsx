@@ -1,36 +1,29 @@
 import React from 'react';
-import { BtnOrLink } from '../../Common/btnOrLink/btnOrLink';
 import { Button } from '../../Common/Button/Button';
 import s from './downPart.module.scss';
-import style from './topPart.module.scss';
+import btn from './topPart.module.scss';
 
 export function DownPart() {
 
-    const btn = {
-        name: s.more,
-        link: '',
-        stylees: {}
-    }
+    const text = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam consequuntur nemo doloribus ipsam? Est sit ad sint at impedit sunt consequuntur soluta eos quasi dolores accusamus illo esse sapiente quo repudiandae libero, distinctio iste aspernatur voluptatum numquam ex reiciendis odio! Tempora autem doloribus rerum culpa assumenda sed fuga, iusto itaque reiciendis obcaecati dolores alias. Vel.';
 
     return (
         <div className={s.wrapper}>
             <div className={s.article}>
                 <h1 className={s.title}>Lorem, ipsum.</h1>
-                <p className={s.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum velit ipsam error, non illum voluptatum nam minima molestiae labore, ex, tenetur ea distinctio amet beatae et ipsa vero?</p>
+                <p className={s.description}>{text}</p>
                 <ul className={s.info}>
                     <li className={s.ceil}>927<span>Lorem, ipsum.</span></li>
-                    <li><hr /></li>
+                    <hr />
                     <li className={s.ceil}>297<span>Lorem, ipsum.</span></li>
-                    <li><hr /></li>
+                    <hr />
                     <li className={s.ceil}>121<span>Lorem, ipsum dolor.</span></li>
                 </ul>
-                <Button icon='../../images/SVG/arrow_right.svg' name={style.more}>
+                <Button icon='../../images/SVG/arrow_right.svg' name={btn.more}>
                     Read more
                 </Button>
             </div>
-            <div className={s.image}></div>
-            {/* <img src=''/>                         
-            props */}
+            <img className={s.image} src='../../images/travel.jpg' />
         </div>
     )
 }
