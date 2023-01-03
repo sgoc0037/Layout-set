@@ -1,10 +1,19 @@
 .S1 {
+    position: relative;
+
     margin: 0 auto;
     width: 90%;
 
     color: #d2d6d7;
 
+    
     background-color: #0a0d14;
     background-size: contain;
     background-repeat: no-repeat;
+
+    .img {
+        position: absolute;
+    
+        width: 100%;
+    }
 }
