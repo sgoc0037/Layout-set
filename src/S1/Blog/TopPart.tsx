@@ -17,13 +17,7 @@ export function TopPart(props: any) {
                 <CommonCard>
                     {
                         <>
-                            <Q_h2_span >
-                                {'im the title'}
-                                {'im a span'}
-                            </Q_h2_span>
-
-                            <Image mode='fill' path='../../images/Misty_forest_dark.jpg' />
-                            <span>im span too</span>
+                        <Image mode='fill' path='../../images/Misty_forest_dark.jpg' />
                         </>
                     }
                 </CommonCard>

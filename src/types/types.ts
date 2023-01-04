@@ -3,3 +3,7 @@ export interface ICommonPast {
     stylees?: React.CSSProperties
     children?: React.ReactNode
 }
+
+export interface ICommonImage extends ICommonPast {
+    path: string
+}
