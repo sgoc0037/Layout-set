@@ -22,7 +22,7 @@ export function TopPart(props: any) {
                                 {'im a span'}
                             </Q_h2_span>
 
-                            <Image path='../../images/Misty_forest_dark.jpg' />
+                            <Image mode='fill' path='../../images/Misty_forest_dark.jpg' />
                             <span>im span too</span>
                         </>
                     }
