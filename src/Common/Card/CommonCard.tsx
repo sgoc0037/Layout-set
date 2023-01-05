@@ -3,7 +3,7 @@ import { ICommonPast } from '../../types/types';
 import s from './commonCard.module.scss';
 
 interface ICommonCard extends ICommonPast {
-    
+
 }
 
 export function CommonCard({ name, stylees, children }: ICommonCard) {
@@ -12,7 +12,7 @@ export function CommonCard({ name, stylees, children }: ICommonCard) {
 
     return (
         <div className={s.card}>
-            {React.Children.map(children, (i) => i)}
+            {children}
         </div>
     )
 }

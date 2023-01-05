@@ -1,6 +1,6 @@
 import React from "react";
 import { ICommonPast } from "../../../types/types";
-import s from 'commonText.module.scss'
+import s from './Q_h3_p_span.module.scss'
 
 
 
