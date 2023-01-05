@@ -3,7 +3,7 @@ import { ICommonPast } from '../../types/types';
 import s from './commonCard.module.scss';
 
 interface ICommonCard extends ICommonPast {
-
+    
 }
 
 export function CommonCard({ name, stylees, children }: ICommonCard) {

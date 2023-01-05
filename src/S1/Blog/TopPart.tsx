@@ -1,12 +1,13 @@
 import React from "react";
 import { CommonCard } from "../../Common/Card/CommonCard";
 import { Image } from "../../Common/Image/Image";
+import { Avatar_names } from "../../Common/TextComponents/avatar_names/Avatar_names";
 import { Q_h2_span } from "../../Common/TextComponents/h2span/Q_h2_span";
 import s from './topPart.module.scss';
 
 export function TopPart(props: any) {
 
-    const content = ['Lorem ipsum dolor sit amet.', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime delectus numquam dolore?']
+    const content = ['Lorem ipsum dolor sit amet.', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime delectus numquam dolore?'];
 
     return (
         <>
@@ -17,7 +18,8 @@ export function TopPart(props: any) {
                 <CommonCard>
                     {
                         <>
-                        <Image mode='fill' path='../../images/Misty_forest_dark.jpg' />
+                            <Image mode='fill' path='../../images/Misty_forest_dark.jpg' />
+                            <Avatar_names path="path='../../images/Misty_forest_dark.jpg'"></Avatar_names>
                         </>
                     }
                 </CommonCard>

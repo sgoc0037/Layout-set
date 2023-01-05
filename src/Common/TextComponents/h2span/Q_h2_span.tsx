@@ -1,6 +1,6 @@
 import React from "react";
 import { ICommonPast } from "../../../types/types";
-import s from './Q_h2_span.module.scss';
+import s from 'commonText.module.scss';
 
 export function Q_h2_span({ name, children }: ICommonPast) {
 
