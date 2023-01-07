@@ -1,0 +1,12 @@
+.cards {
+    width: 100%;
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.vertical {
+    flex-direction: column;
+}

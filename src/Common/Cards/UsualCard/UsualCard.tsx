@@ -1,6 +1,6 @@
 import React from "react";
 import s from './usualCard.module.scss';
-import { ICommonPast } from "../../types/types";
+import { ICommonPast } from "../../../types/types";
 
 interface IUsualCard extends ICommonPast {
     mode?: 'fill' | 'half' | 'default'
