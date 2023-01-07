@@ -1,14 +1,21 @@
 import React from "react";
-import s from './card.module.css';
+import s from './card.module.scss';
 import PropTypes from 'prop-types';
+import { ICommonPast } from "../../types/types";
 
-export const Card = ({ name, mode, path, children, ...props }) => {
+interface ICard extends ICommonPast {
+    mode?: 'fill' | 'half'
+    path?: string
+}
+
+export const Card = ({ name, stylees, mode, path, children, ...props }: ICard) => {
 
     const card = [name, s.card].join(' ');
     const image = mode === 'fill' ? s.fill : s.half;
-    const wrap = mode === 'fill' ? [s.wrapFill,s.wrap] : [s.wrapHalf,s.wrap];
+    const wrap = (mode === 'fill' ? [s.wrapFill, s.wrap] : [s.wrapHalf, s.wrap]).join(' ');
 
     return <div
+        style={stylees}
         {...props}
         className={card}
     >
@@ -19,7 +26,7 @@ export const Card = ({ name, mode, path, children, ...props }) => {
             </div>
         }
 
-        <div className={wrap.join(' ')}>
+        <div className={wrap}>
             <h3>im h3</h3>
             <p>im p</p>
             <span>im span</span>
