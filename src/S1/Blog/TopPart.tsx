@@ -2,7 +2,7 @@ import React from "react";
 import { Cards } from "../../Common/Cards/Cards";
 import { UsualCard } from "../../Common/Cards/UsualCard/UsualCard";
 import { Avatar_names } from "../../Common/TextComponents/avatar_names/Avatar_names";
-import { Q_h2_span } from "../../Common/TextComponents/h2span/Q_h2_span";
+import { Q_h2_span } from "../../Common/TextComponents/h2_span/Q_h2_span";
 import { Q_h3_p_span } from "../../Common/TextComponents/h3_p_span/Q_h3_p_span";
 import s from './topPart.module.scss';
 
@@ -19,10 +19,10 @@ export function TopPart() {
             <Q_h2_span>
                 {content}
             </Q_h2_span>
-            <Cards mode="vertical">
-                {avatar}
-                {avatar}
-                {avatar}
+            <Cards>
+                <UsualCard>
+                    
+                </UsualCard>
             </Cards>
         </>
     )
