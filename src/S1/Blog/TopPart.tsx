@@ -1,6 +1,5 @@
 import React from "react";
-import { Card } from "../../Common/Card/Card";
-import { Image } from "../../Common/Image/Image";
+import { UsualCard } from "../../Common/Cards/UsualCard";
 import { Avatar_names } from "../../Common/TextComponents/avatar_names/Avatar_names";
 import { Q_h2_span } from "../../Common/TextComponents/h2span/Q_h2_span";
 import { Q_h3_p_span } from "../../Common/TextComponents/h3_p_span/Q_h3_p_span";
@@ -20,7 +19,7 @@ export function TopPart(props: any) {
                 {content}
             </Q_h2_span>
             <div className={s.cards}>
-                <Card mode="half" path='../../images/Misty_forest_dark.jpg'>
+                <UsualCard backgroundColor="#20242f" mode="half" path='../../images/Misty_forest_dark.jpg'>
                     {
                         <>
                             <Q_h3_p_span>
@@ -34,8 +33,8 @@ export function TopPart(props: any) {
                             </Q_h3_p_span>
                         </>
                     }
-                </Card>
-                <Card mode="fill" path='../../images/travel.jpg'>
+                </UsualCard>
+                <UsualCard backgroundColor="#20242f" mode="fill" path='../../images/travel.jpg'>
                     {
                         <>
                             <Q_h3_p_span>
@@ -49,8 +48,8 @@ export function TopPart(props: any) {
                             </Q_h3_p_span>
                         </>
                     }
-                </Card>
-                <Card>
+                </UsualCard>
+                <UsualCard backgroundColor="#20242f">
                     {
                         <Q_h3_p_span>
                             {
@@ -62,7 +61,7 @@ export function TopPart(props: any) {
                             }
                         </Q_h3_p_span>
                     }
-                </Card>
+                </UsualCard>
             </div>
         </>
     )

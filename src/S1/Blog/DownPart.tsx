@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "../../Common/Card/Card";
+import { UsualCard } from "../../Common/Cards/UsualCard";
 import s from "./downPart.module.scss";
 
 export function DownPart(props:any) {
