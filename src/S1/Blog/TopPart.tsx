@@ -1,4 +1,5 @@
 import React from "react";
+import { Cards } from "../../Common/Cards/Cards";
 import { UsualCard } from "../../Common/Cards/UsualCard/UsualCard";
 import { Avatar_names } from "../../Common/TextComponents/avatar_names/Avatar_names";
 import { Q_h2_span } from "../../Common/TextComponents/h2span/Q_h2_span";
@@ -18,9 +19,11 @@ export function TopPart() {
             <Q_h2_span>
                 {content}
             </Q_h2_span>
-            <div className={s.cards}>
-                
-            </div>
+            <Cards mode="vertical">
+                {avatar}
+                {avatar}
+                {avatar}
+            </Cards>
         </>
     )
 }

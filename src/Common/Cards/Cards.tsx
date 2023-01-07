@@ -4,12 +4,12 @@ import s from './cards.module.scss';
 
 
 interface ICards extends ICommonPast {
-    mode: 'vertical' | 'horizontal'
+    mode?: 'vertical'
 }
 
-export function Cards({ name, stylees, mode = "horizontal", children, ...props }: ICards) {
+export function Cards({ name, stylees, mode, children, ...props }: ICards) {
 
-    const names = [name, s.cards].join(' ');
+    const names = [name, mode && s[mode], s.cards].join(' ');
 
     return <div style={stylees} className={names} {...props}>
         {children}

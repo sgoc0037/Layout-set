@@ -8,5 +8,9 @@
 }
 
 .vertical {
+    margin: 0 auto;
     flex-direction: column;
+    & > * {
+        padding: 20px 0;
+    }
 }
