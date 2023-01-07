@@ -1,5 +1,5 @@
 import React from "react";
-import { CommonCard } from "../../Common/Card/CommonCard";
+import { Card } from "../../Common/Card/Card";
 import s from "./downPart.module.scss";
 
 export function DownPart(props:any) {
@@ -8,10 +8,6 @@ export function DownPart(props:any) {
         <>
             <h2 className={s.title}></h2>
             <span className={s.title}></span>
-            <CommonCard {...props}></CommonCard>
-            <CommonCard {...props}></CommonCard>
-            <CommonCard {...props}></CommonCard>
-            <CommonCard {...props}></CommonCard>
         </>
     )
 }

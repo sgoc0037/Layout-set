@@ -7,9 +7,7 @@ export function Avatar_names({ name, stylees, path, children }: ICommonImage) {
     const names = [name, s.wrapper].join(' ');
 
     return <div style={stylees} className={names}>
-        <div className={s.img}>
-            {/* <img src={path} /> */}
-        </div>
+        <img src={path} />
         <span>{children}</span>
     </div>
 }

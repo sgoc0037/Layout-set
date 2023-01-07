@@ -27,22 +27,7 @@ export const Card = ({ name, stylees, mode, path, children, ...props }: ICard) =
         }
 
         <div className={wrap}>
-            <h3>im h3</h3>
-            <p>im p</p>
-            <span>im span</span>
             {children}
         </div>
     </div>
-}
-
-
-Card.propTypes = {
-    name: PropTypes.string,
-    mode: PropTypes.oneOf(['fill', 'half']),
-    path: PropTypes.string
-}
-
-Card.defaultProps = {
-    mode: '',
-    path: ''
 }
