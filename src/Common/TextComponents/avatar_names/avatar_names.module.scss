@@ -7,7 +7,7 @@
     justify-content: space-around;
     align-items: center;
 
-    & > img {
+    :first-child {
         background-color: black;
         object-fit: cover;
         width: 40px;

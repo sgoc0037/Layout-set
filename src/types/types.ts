@@ -5,5 +5,5 @@ export interface ICommonPast {
 }
 
 export interface ICommonImage extends ICommonPast {
-    path: string
+    path?: string
 }
