@@ -14,6 +14,6 @@ export function Button({ name, stylees, icon, children }: IButton) {
 
     return <button className={names} style={stylees}>
         <span>{children}</span>
-        <div>{elem}</div>
+        {icon && <div>{elem}</div>}
     </button>
 }

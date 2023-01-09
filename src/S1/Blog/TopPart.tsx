@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "../../Common/Button/Button";
 import { Cards } from "../../Common/Cards/Cards";
 import { Card } from "../../Common/Cards/UsualCard/Card";
 import { ContentBoundary } from "../../Common/Layouts/ContentBoundary";
@@ -25,8 +26,8 @@ export function TopPart() {
                     [...Array(6)].map(item => {
                         return <Card name={s.card}>
                             <img src="../../images/travel.jpg" />
-                            <Q_h3_span_button>
-                                
+                            <Q_h3_span_button name={s.article}>
+                                {['','',<Button>click me</Button>]}
                             </Q_h3_span_button>
                         </Card>
                     })
