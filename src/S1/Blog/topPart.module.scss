@@ -2,3 +2,26 @@
     display: flex;
     justify-content: space-around;
 }
+
+.card {
+    width: 29%;
+    max-height: 600px;
+
+    justify-content: space-between;
+
+    background-color: #20242f;
+
+    &>img {
+        height: 350px;
+        object-fit: cover;
+        object-position: bottom;
+    }
+}
+
+.article {
+    align-items: start;
+}
+
+.avatar {
+    font-weight: 300;
+}

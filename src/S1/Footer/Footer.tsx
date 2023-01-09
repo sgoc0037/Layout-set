@@ -1,5 +1,5 @@
 import React, { MouseEventHandler } from "react";
-import { Q_h2_span } from "../../Common/TextComponents/h2_span/Q_h2_span";
+import { Q_h2_span } from "../../Common/TextComponents/twoHTML/Q_h2_span";
 import { ICommonPast } from "../../types/types";
 import s from './footer.module.scss';
 

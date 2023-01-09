@@ -2,7 +2,7 @@ import React, { isValidElement } from "react";
 
 interface IUseText {
     components: Array<string>
-    children?: React.ReactNode
+    children: React.ReactNode
 }
 
 export function useText({ components, children }: IUseText) {

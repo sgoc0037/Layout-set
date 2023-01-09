@@ -12,7 +12,10 @@ export const Card = ({ name, stylees = {}, path, children, ...props }: ICard) =>
 
     const card = [name, s.card, (path && s.img)].join(' ');
 
-    stylees.backgroundImage = `url(${path})`;
+    {
+        path &&
+            (stylees.backgroundImage = `url(${path})`)
+    }
 
     return <div style={stylees} className={card} {...props}>
         {children}

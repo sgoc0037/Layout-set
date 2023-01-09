@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from '../../Common/Button/Button';
-import { Q_h2_span } from '../../Common/TextComponents/h2_span/Q_h2_span';
+import { Q_h2_span } from '../../Common/TextComponents/twoHTML/Q_h2_span';
 import s from './topPart.module.scss'
 
 export function TopPart() {
