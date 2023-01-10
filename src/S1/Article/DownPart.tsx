@@ -19,7 +19,7 @@ export function DownPart() {
                     <hr />
                     <li className={s.ceil}>121<span>Lorem, ipsum dolor.</span></li>
                 </ul>
-                <Button icon='../../images/SVG/arrow_right.svg' name={btn.more}>
+                <Button iconStylees={{ backgroundColor: '#e89400' }} icon='../../images/SVG/arrow_right.svg' name={btn.more}>
                     Read more
                 </Button>
             </div>

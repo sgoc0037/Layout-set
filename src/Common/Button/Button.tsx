@@ -1,19 +1,19 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import { ICommonPast } from "../../types/types";
+import { Icon } from "../Icon/Icon";
 import s from './button.module.scss';
 
 interface IButton extends ICommonPast {
-    icon?: string | React.ReactNode
+    icon?: string
+    iconStylees?: CSSProperties
 }
 
-export function Button({ name, stylees, icon, children }: IButton) {
+export function Button({ name, stylees, icon, iconStylees, children }: IButton) {
 
     const names = [name, s.button].join(' ');
 
-    const elem = typeof icon === 'string' ? <img src={icon} /> : icon;
-
     return <button className={names} style={stylees}>
         <span>{children}</span>
-        {icon && <div>{elem}</div>}
+        {icon && <Icon stylees={iconStylees} path={icon} />}
     </button>
 }

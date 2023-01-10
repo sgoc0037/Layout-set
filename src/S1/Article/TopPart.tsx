@@ -12,7 +12,7 @@ export function TopPart() {
             <Q_h2_span name={s.wrapper}>
                 {content}
             </Q_h2_span>
-            <Button icon='../../images/SVG/compass_void.svg' name={s.more}>
+            <Button iconStylees={{ backgroundColor: '#e89400' }} icon='../../images/SVG/compass_void.svg' name={s.more}>
                 Read more
             </Button>
         </div>

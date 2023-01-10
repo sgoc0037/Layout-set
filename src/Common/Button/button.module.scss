@@ -1,15 +1,12 @@
 .button {
     width: 150px;
 
-    display: flex;
+    display: inline-flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: nowrap;
 
     span {
         width: 70%;
-    }
-    div {
-        width: 30%;
     }
 }
