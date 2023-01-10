@@ -27,7 +27,7 @@ export function TopPart() {
                         return <Card name={s.card}>
                             <img src="../../images/travel.jpg" />
                             <Q_h3_span_button name={s.article}>
-                                {['','',<Button>click me</Button>]}
+                                {['','',<Button name={s.button} icon="../../images/SVG/share_fill.svg" />]}
                             </Q_h3_span_button>
                         </Card>
                     })

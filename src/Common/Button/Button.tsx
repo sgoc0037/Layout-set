@@ -11,9 +11,10 @@ interface IButton extends ICommonPast {
 export function Button({ name, stylees, icon, iconStylees, children }: IButton) {
 
     const names = [name, s.button].join(' ');
-
+    
     return <button className={names} style={stylees}>
-        <span>{children}</span>
+        {React.Children.count(children) !== 0 &&
+            <span>{children}</span>}
         {icon && <Icon stylees={iconStylees} path={icon} />}
     </button>
 }
