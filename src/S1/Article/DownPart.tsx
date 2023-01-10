@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '../../Common/Button/Button';
+import { Arrow_right } from '../../images/SVG/arrow_right';
 import s from './downPart.module.scss';
 import btn from './topPart.module.scss';
 
@@ -19,11 +20,11 @@ export function DownPart() {
                     <hr />
                     <li className={s.ceil}>121<span>Lorem, ipsum dolor.</span></li>
                 </ul>
-                <Button iconStylees={{ backgroundColor: '#e89400' }} icon='../../images/SVG/arrow_right.svg' name={btn.more}>
+                <Button iconStylees={{ backgroundColor: '#e89400' }} icon={<Arrow_right />} name={btn.more}>
                     Read more
                 </Button>
             </div>
-            <img className={s.image} src='../../images/travel.jpg' />
+            <img className={s.image} src='../../images/JPG/travel.jpg' />
         </div>
     )
 }

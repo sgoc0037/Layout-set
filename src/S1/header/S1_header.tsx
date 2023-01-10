@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import { CommonCeil } from "../../Common/Ceil/CommonCeil";
 import { S1header } from "../../Common/Header/CommonHeader";
+import { Icon } from "../../Common/Icon/Icon";
 import { useInput } from "../../Hooks/useInput";
+import { Magnifier } from "../../images/SVG/magnifier";
 import { ICommonPast } from "../../types/types";
 import s from './S1_header.module.scss';
 
-export function S1_header({}: ICommonPast) {
+export function S1_header({ }: ICommonPast) {
 
     const [icon, setIcon] = useState<boolean>(false);
-    const { value, changeHandler } = useInput();
+    const [value, changeHandler] = useInput();
 
     const clickHandler = () => setIcon(true);
 
@@ -41,8 +43,7 @@ export function S1_header({}: ICommonPast) {
         <div
             onClick={clickHandler}
             className={s.headerSearch}>
-            {icon ? <input value={value} onChange={changeHandler} placeholder='Search' /> : <img
-                src='../../images/SVG/iconmonstr-magnifier-lined.svg' />}
+            {icon ? <input value={value} onChange={changeHandler} placeholder='Search' /> : <Icon name={s.icon} component={<Magnifier />} />}
         </div>
 
         <hr />

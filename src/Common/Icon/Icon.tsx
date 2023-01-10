@@ -1,11 +1,15 @@
 import React from "react";
 import { Share_fill } from "../../images/SVG/share_fill";
-import { ICommonImage } from "../../types/types";
+import { ICommonPast } from "../../types/types";
 import s from './icon.module.scss';
 
-export function Icon({ name, stylees }: ICommonImage) {
+interface IIcon extends ICommonPast {
+    component: React.ReactElement | string
+}
+
+export function Icon({ name, stylees, component }: IIcon) {
 
     const names = [name, s.icon].join(' ');
 
-    return <div style={stylees} className={names}><Share_fill /></div>
+    return <div style={stylees} className={names}>{component}</div>
 } 

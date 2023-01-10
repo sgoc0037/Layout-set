@@ -16,7 +16,7 @@ export function S1() {
     }
 
     const stylees = {
-        backgroundImage: 'url(../../images/Misty_forest_dark.jpg)',
+        backgroundImage: 'url(../../images/JPG/Misty_forest_dark.jpg)',
     }
 
     return (

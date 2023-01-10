@@ -6,6 +6,7 @@ import { ContentBoundary } from "../../Common/Layouts/ContentBoundary";
 import { Avatar_names } from "../../Common/TextComponents/avatar_names/Avatar_names";
 import { Q_h3_span_button } from "../../Common/TextComponents/threeHTML/Q_h3_span_button";
 import { Q_h2_span } from "../../Common/TextComponents/twoHTML/Q_h2_span";
+import { Share_fill } from "../../images/SVG/share_fill";
 import s from './topPart.module.scss';
 
 export function TopPart() {
@@ -25,9 +26,9 @@ export function TopPart() {
                 {
                     [...Array(6)].map(item => {
                         return <Card name={s.card}>
-                            <img src="../../images/travel.jpg" />
+                            <img src="../../images/JPG/travel.jpg" />
                             <Q_h3_span_button name={s.article}>
-                                {['','',<Button name={s.button} icon="../../images/SVG/share_fill.svg" />]}
+                                {['', '', <Button name={s.button} iconStylees={{ fill: 'whitesmoke' }} icon={<Share_fill />} />]}
                             </Q_h3_span_button>
                         </Card>
                     })

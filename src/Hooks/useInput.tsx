@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-export function useInput() {
+export function useInput(): [string, (e: React.ChangeEvent<HTMLInputElement>) => void] {
 
     const [value, setValue] = useState<string>('');
 
@@ -8,5 +8,5 @@ export function useInput() {
         setValue(e.target.value);
     }
 
-    return { value, changeHandler };
+    return [value, changeHandler];
 }

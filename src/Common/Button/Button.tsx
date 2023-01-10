@@ -4,7 +4,7 @@ import { Icon } from "../Icon/Icon";
 import s from './button.module.scss';
 
 interface IButton extends ICommonPast {
-    icon?: string
+    icon?: React.ReactElement | string
     iconStylees?: CSSProperties
 }
 
@@ -15,6 +15,6 @@ export function Button({ name, stylees, icon, iconStylees, children }: IButton) 
     return <button className={names} style={stylees}>
         {React.Children.count(children) !== 0 &&
             <span>{children}</span>}
-        {icon && <Icon stylees={iconStylees} path={icon} />}
+        {icon && <Icon stylees={iconStylees} component={icon} />}
     </button>
 }
