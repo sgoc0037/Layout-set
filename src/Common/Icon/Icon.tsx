@@ -1,5 +1,4 @@
 import React from "react";
-import { Share_fill } from "../../images/SVG/share_fill";
 import { ICommonPast } from "../../types/types";
 import s from './icon.module.scss';
 

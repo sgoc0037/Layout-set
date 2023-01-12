@@ -7,15 +7,14 @@ import { Avatar_names } from "../../Common/TextComponents/avatar_names/Avatar_na
 import { Q_h3_span_button } from "../../Common/TextComponents/threeHTML/Q_h3_span_button";
 import { Q_h2_span } from "../../Common/TextComponents/twoHTML/Q_h2_span";
 import { Share_fill } from "../../images/SVG/share_fill";
+import { makeKey } from "../../utils/utils";
 import s from './topPart.module.scss';
 
 export function TopPart() {
 
     const content = ['Lorem ipsum dolor sit amet.', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime delectus numquam dolore?'];
-
-    const avatar = <Avatar_names name={s.avatar} path="../../images/finn.jpg">
-        {'john doe'}
-    </Avatar_names>
+    const Avatar = <Avatar_names key={makeKey('avatar')} name={s.avatar} path="../../images/JPG/finn.jpg">{'john doe'}</Avatar_names>;
+    const Btn = <Button key={makeKey('button')} name={s.button} iconStylees={{ fill: 'whitesmoke' }} icon={<Share_fill />} />;
 
     return (
         <ContentBoundary>
@@ -25,10 +24,10 @@ export function TopPart() {
             <Cards>
                 {
                     [...Array(6)].map(item => {
-                        return <Card name={s.card}>
+                        return <Card key={makeKey('Cards')} name={s.card}>
                             <img src="../../images/JPG/travel.jpg" />
                             <Q_h3_span_button name={s.article}>
-                                {['', '', <Button name={s.button} iconStylees={{ fill: 'whitesmoke' }} icon={<Share_fill />} />]}
+                                {[Avatar, content[1], Btn]}
                             </Q_h3_span_button>
                         </Card>
                     })
