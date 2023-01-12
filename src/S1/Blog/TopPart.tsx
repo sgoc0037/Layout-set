@@ -26,9 +26,14 @@ export function TopPart() {
                     [...Array(6)].map(item => {
                         return <Card key={makeKey('Cards')} name={s.card}>
                             <img src="../../images/JPG/travel.jpg" />
-                            <Q_h3_span_button name={s.article}>
-                                {[Avatar, content[1], Btn]}
-                            </Q_h3_span_button>
+                            {Avatar}
+                            <div className={s.article}>
+                                <p>{content[1]}</p>
+                                <div>
+                                    <i>{content[0]}</i>
+                                    {Btn}
+                                </div>
+                            </div>
                         </Card>
                     })
                 }
