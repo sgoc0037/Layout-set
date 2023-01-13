@@ -6,11 +6,19 @@
     align-items: center;
 }
 
-.circle {
+.circle1,.circle2 {
     width: 200px;
     height: 200px;
 
     background-color: #20242f;
 
     border: 2px solid whitesmoke;
+}
+
+.circle1 {
+    justify-content: center;
+}
+
+.circle2 {
+    justify-content: space-evenly;
 }

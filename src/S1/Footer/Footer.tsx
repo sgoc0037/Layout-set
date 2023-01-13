@@ -24,9 +24,9 @@ export function Footer({ name, stylees, link, children }: IFooter) {
                 <Q_h2_span>
                     {content}
                 </Q_h2_span>
-                <Circle name={s.circle}>
+                <Circle name={s.circle1}>
                     <Icon stylees={{ fill: 'whitesmoke' }} component={<Phone />} />
-                    <Q_h3_span_span>
+                    <Q_h3_span_span name={s.article}>
                         {[
                             'Call us',
                             '+1234567890',
@@ -34,7 +34,7 @@ export function Footer({ name, stylees, link, children }: IFooter) {
                         ]}
                     </Q_h3_span_span>
                 </Circle>
-                <Circle name={s.circle}>
+                <Circle name={s.circle2}>
                     <Icon stylees={{ fill: 'whitesmoke' }} component={<Mail />} />
                     <h3>
                         Send us an Enquiry.
