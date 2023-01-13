@@ -1,0 +1,16 @@
+.footer {
+    padding: 70px 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+
+    background-color: #20242f;
+
+    border: 2px solid whitesmoke;
+}

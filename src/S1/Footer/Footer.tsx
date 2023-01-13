@@ -1,5 +1,11 @@
 import React, { MouseEventHandler } from "react";
+import { Circle } from "../../Common/Circle/Circle";
+import { Icon } from "../../Common/Icon/Icon";
+import { ContentBoundary } from "../../Common/Layouts/ContentBoundary";
+import { Q_h3_span_span } from "../../Common/TextComponents/threeHTML/Q_h3_span_span";
 import { Q_h2_span } from "../../Common/TextComponents/twoHTML/Q_h2_span";
+import { Mail } from "../../images/SVG/mail";
+import { Phone } from "../../images/SVG/phone";
 import { ICommonPast } from "../../types/types";
 import s from './footer.module.scss';
 
@@ -12,27 +18,29 @@ export function Footer({ name, stylees, link, children }: IFooter) {
     const content = ['Lorem, ipsum dolor.', 'Lorem ipsum dolor sit amet consectetur adipisicing.'];
     const names = [name, s.link].join(' ');
 
-    function callMe(e: React.MouseEvent<HTMLButtonElement>) {
-        //скопировать в буфер.
-    }
-
     return (
-        <footer className={s.footer}>
-            <Q_h2_span>
-                {content}
-            </Q_h2_span>
-            <button className={s.link} onClick={callMe}>1231456234233</button>
-            {!link &&
-                <button style={stylees} className={`${s.link} ${name}`}>
-                    {children}
-                </button>
-            }
-            {link &&
-                <a style={stylees} className={`${s.link} ${name}`}
-                    href={link}>
-                    {children}
-                </a>
-            }
-        </footer>
+        <ContentBoundary>
+            <footer className={s.footer}>
+                <Q_h2_span>
+                    {content}
+                </Q_h2_span>
+                <Circle name={s.circle}>
+                    <Icon stylees={{ fill: 'whitesmoke' }} component={<Phone />} />
+                    <Q_h3_span_span>
+                        {[
+                            'Call us',
+                            '+1234567890',
+                            'We are always here'
+                        ]}
+                    </Q_h3_span_span>
+                </Circle>
+                <Circle name={s.circle}>
+                    <Icon stylees={{ fill: 'whitesmoke' }} component={<Mail />} />
+                    <h3>
+                        Send us an Enquiry.
+                    </h3>
+                </Circle>
+            </footer>
+        </ContentBoundary>
     )
 }
